@@ -1,0 +1,91 @@
+.contact {
+  top: 50px;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+}
+
+.contactUs {
+  top: 100px;
+  display: flex;
+  color: black;
+  flex-wrap: wrap;
+  position: absolute;
+}
+
+.contactUsDesc {
+  width: 400px;
+  padding: 10px;
+  margin-right: 30px;
+}
+
+.contactUs h1 {
+  display: flex;
+  color: black;
+  margin-bottom: 40px;
+}
+
+.contactUsForm {
+  width: 400px;
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  flex-direction: column;
+  box-shadow: 0px 5px 20px 1px gray;
+}
+
+.contactUsFormOne { 
+  width: 100%;
+  display: flex;
+  font-weight: bold;
+}
+
+.contactUsFormOne span {
+  margin: 5px;
+}
+
+.contactUsFormOne span input {
+  padding: 5px;
+  outline: none;
+  border: 1px solid;
+  border-radius: 7px;
+}
+
+.contactUsFormTwo {
+  margin-top: 10px;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.contactUsFormTwo input {
+  padding: 5px;
+  outline: none;
+  border: 1px solid;
+  border-radius: 7px;
+}
+
+.contactUsFormThree {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.contactUsFormThree input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 7px;
+}
+
+.contactUsForm button {
+  width: 70px;
+  border: none;
+  padding: 10px;
+  color: white;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: rgb(47, 47, 133);
+}
