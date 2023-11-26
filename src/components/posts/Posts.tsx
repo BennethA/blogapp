@@ -8,7 +8,7 @@ const Posts = () => {
     <>
       <Topbar/>
       <Header/>
-      <h1>POSTS</h1>
+      <h1>BLOGS</h1>
       <div className="posts">
         <Post/>
       </div>

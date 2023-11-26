@@ -9,8 +9,8 @@ const Post = () => {
     <>
       {POST.map(post => {
         return (
-          <Link to='/singlepost' key={post.id}>
-            <div className="post">
+          <div className="post" key={post.id}>
+              <Link to='/singlepost/{post.id}'>
               <img className='postImg' src={post.images} alt="" />
               <div className="postInfo">
                 <div className="postTitle">
@@ -21,8 +21,8 @@ const Post = () => {
               <p className='postDesc'>
                 {post.postDesc}
               </p>
-            </div>
-          </Link>
+            </Link>
+          </div>
         )
       })}
     </>

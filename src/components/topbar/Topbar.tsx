@@ -25,17 +25,17 @@ const Topbar = () => {
         </div>
         <div  className='topCenter'>
           <ul>
-            <li>
-              <Link to='/' className='link'>Home</Link>
-            </li>
-            <li>
-              <Link to='/write' className='link'>Write</Link>
-            </li>
+            <Link to='/' className='link'>
+              <li>Home</li>
+            </Link>
+            <Link to='/write' className='link'>
+              <li>Write</li>
+            </Link>
             {
               user ? 
-              <li>
-                <Link to='/contact' className='link'>Contact</Link>
-              </li> : (
+              <Link to='/contact' className='link'>
+                <li>Contact</li>
+              </Link> : (
                 <>
                 
                 </>

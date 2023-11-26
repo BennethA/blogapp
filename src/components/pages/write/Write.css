@@ -1,5 +1,6 @@
 .write {
   top: 60px;
+  padding: 0 60px;
   display: flex;
   position: relative;
   align-items: center;
@@ -22,48 +23,30 @@
   flex-direction: column;
 }
 
-.writeFormGroupOne {
-  display: flex;
-  margin-bottom: 10px;
-  align-items: center;
-  justify-content: center;
+.chooseImg {
+  border-radius: 20px;
+  background-color: gray;
+  margin-top: 10px;
 }
 
-.writeFormGroupOne div{
-  display: flex;
-  margin-bottom: 10px;
-  align-items: center;
-  justify-content: center;
+.writeInput {
+  outline: none;
+  width: 70%;
+  border-radius: 100px;
+  border: 2px solid blue;
+  padding: 10px 0 10px 15px;
+}
+
+.date {
+  padding: 5px;
+  border-radius: 20px;
+  border: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .writeFormGroup {
   display: flex;
   align-items: center;
-}
-
-.writeIcon {
-  width: 30px;
-  height: 30px;
-  display: flex;
-  color: gray;
-  font-size: 20px;
-  cursor: pointer;
-  border: 1px solid;
-  border-radius: 15px;
-  align-items: center;
-  justify-content: center;
-}
-
-#fileInput {
-  display: none;
-}
-
-.writeInput {
-  width: 70vw;
-  outline: none;
-  border-radius: 100px;
-  border: 2px solid blue;
-  padding: 10px 0 10px 15px;
 }
 
 .writeText {

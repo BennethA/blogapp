@@ -36,8 +36,11 @@
   cursor: pointer;
   font-size: larger;
   font-weight: bold;
+  border-radius: 5px;
   align-items: center;
+  transform: scale(0.9);
   justify-content: center;
+  /*animation: mymove 5s infinite;*/
 }
 
 .topLeft img{
@@ -137,3 +140,8 @@
   .top {
   }
 }
+
+/*@keyframes mymove {
+  from {background-color: red; color: yellow;}
+  to {background-color: yellow; color: red;}
+}*/

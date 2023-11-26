@@ -1,16 +1,17 @@
 import Topbar from '../topbar/Topbar'
+import POST from '../post/Post.json'
 import './Singlepost.css'
-import headerImg from '/src/assets/IMG_6233.jpg'
 
 const Singlepost = () => {
+  const post = JSON.stringify(POST)
   return (
     <>
       <Topbar/>
       <div className="singlePost">
         <div className="singlePostWrapper">
-          <img src={headerImg} alt="" className="singlePostImg" />
+          <img src={post} alt="" className="singlePostImg" />
           <h1 className="singlePostTitle">
-            Lorem ipsum dolor sit amet
+            {post}
             <div className="singlePostEdit">
               <i className='singlePostIcon'>edit</i>
               <i className='singlePostIcon'>delete</i>
@@ -18,12 +19,10 @@ const Singlepost = () => {
           </h1>
           <div className="singlePostInfo">
             <span className='singlePostAuthor'>Author: <b>Benneth</b></span>
-            <span className='singlePostDate'>1hr ago</span>
+            <span className='singlePostDate'>{post}</span>
           </div>
           <p className='singlePostDesc'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque incidunt quisquam eum fugit consequuntur ipsam explicabo magnam voluptas autem. Ullam fugiat amet illum, voluptates sequi sed fuga minus voluptatibus quaerat!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque incidunt quisquam eum fugit consequuntur ipsam explicabo magnam voluptas autem. Ullam fugiat amet illum, voluptates sequi sed fuga minus voluptatibus quaerat!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque incidunt quisquam eum fugit consequuntur ipsam explicabo magnam voluptas autem. Ullam fugiat amet illum, voluptates sequi sed fuga minus voluptatibus quaerat!
+            {post}
           </p>
         </div>
       </div>

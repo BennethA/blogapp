@@ -1,6 +1,7 @@
 .singlePost {
   position: absolute;
   top: 40px;
+  width: 100%;
 }
 
 .singlePostWrapper {
