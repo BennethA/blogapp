@@ -1,19 +1,32 @@
 import './Posts.css'
-import Post from '../post/Post'
-import Header from '../header/Header'
-import Topbar from '../topbar/Topbar'
+import POSTS from './Posts.json'
+import {
+  Link 
+} from 'react-router-dom';
 
-const Posts = () => {
+const Post = () => {
   return (
     <>
-      <Topbar/>
-      <Header/>
-      <h1>BLOGS</h1>
-      <div className="posts">
-        <Post/>
-      </div>
+      {POSTS.map(post => {
+        return (
+          <div className="post" key={post.id}>
+            <Link to='/singlepost/:id'>
+              <img className='postImg' src={post.images} alt="" />
+              <div className="postInfo">
+                <div className="postTitle">
+                  {post.postTitle}
+                </div>
+                <span className="postDate">{post.postDate}</span>
+              </div>
+              <p className='postDesc'>
+                {post.postDesc}
+              </p>
+            </Link>
+          </div>
+        )
+      })}
     </>
   )
 }
 
-export default Posts
+export default Post

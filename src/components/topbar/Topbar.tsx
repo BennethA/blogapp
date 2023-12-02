@@ -21,7 +21,7 @@ const Topbar = () => {
               </Link>
                ): ' '
           }
-          <p>BLOGiLY</p>
+          <p>BLOGweb</p>
         </div>
         <div  className='topCenter'>
           <ul>
@@ -33,7 +33,7 @@ const Topbar = () => {
             </Link>
             {
               user ? 
-              <Link to='/contact' className='link'>
+              <Link to='/contactpage' className='link'>
                 <li>Contact</li>
               </Link> : (
                 <>

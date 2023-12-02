@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Topbar from '../../topbar/Topbar'
 import './Write.css'
 import headerImg from '/src/assets/IMG_6233.jpg'
-import POST from '/Users/addob/OneDrive/Desktop/reactblogapp/src/components/post/Post.json'
+import POST from '/Users/addob/OneDrive/Desktop/reactblogapp/src/components/posts/Posts.json'
 
 
 const Write = () => {

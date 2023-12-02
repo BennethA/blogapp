@@ -2,15 +2,16 @@ import './App.css'
 import Login from './components/pages/login/Login'
 import Register from './components/pages/register/Register'
 import Write from './components/pages/write/Write'
-import Posts from './components/posts/Posts'
+import Postssection from './components/blogPage/Postssection'
 import {
   BrowserRouter as Router,
   Routes,
   Route 
 } from 'react-router-dom';
-import Singlepost from './components/singlepost/Singlepost'
-import Contact from './components/contact/Contact'
+import Postinfo from './components/postInfo/Postinfo'
+import Contactpage from './components/contactPage/Contact'
 import Settings from './components/pages/settings/Settings'
+import Postinfp from './components/postInfo/Postinfo'
 
 function App() {
   const user = true
@@ -19,13 +20,14 @@ function App() {
     <div className='app'>
       <Router>
         <Routes>
-          <Route exact path='/' element={<Posts/>}/>
-          <Route path='/register' element={ user ? <Posts/> : <Register/>}/>
-          <Route path='/login' element={ user ? <Posts/> : <Login/>}/>
+          <Route exact path='/' element={<Postssection/>}/>
+          <Route path='/register' element={ user ? <Postssection/> : <Register/>}/>
+          <Route path='/login' element={ user ? <Postssection/> : <Login/>}/>
           <Route path='/write' element={ user ? <Write/> : <Register/>}/>
           <Route path='/settings' element={ user ? <Settings/> : <Register/>}/>
-          <Route path='/singlepost' element={ user ? <Singlepost/> : <p className='singlepostRegBef'>Sorry <br/> Login / Register before</p>}/>
-          <Route path='/contact' element={<Contact/>}/>
+          <Route path='/postinfo' element={ user ? <Postinfo/> : <p className='singlepostRegBef'>Sorry <br/> Login / Register before</p>}/>
+          <Route path='/contactpage' element={<Contactpage/>}/>
+          <Route path='/singlepost/:id' element={<Postinfp/>}/>
         </Routes>
       </Router>
     </div>

@@ -1,8 +1,8 @@
 import Topbar from '../topbar/Topbar'
-import POST from '../post/Post.json'
-import './Singlepost.css'
+import POST from '../posts/Posts.json'
+import './Postinfo.css'
 
-const Singlepost = () => {
+const Postinfo = () => {
   const post = JSON.stringify(POST)
   return (
     <>
@@ -30,4 +30,4 @@ const Singlepost = () => {
   )
 }
 
-export default Singlepost
+export default Postinfo
